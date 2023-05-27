@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void print_error(vars_t *vars, char *mssages)
+void print_error(vars_t *vars, char *msg)
 {
 	char *count;
 
@@ -74,4 +74,5 @@ char *_uitoa(unsigned int count)
 	}
 	return (numstr);
 }
+
 
