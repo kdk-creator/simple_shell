@@ -44,7 +44,7 @@ typedef struct builtins
 	void (*f)(vars_t *);
 } builtins_t;
 
-char **make_env(char **env);
+char **makeenv(char **env);
 void free_env(char **env);
 
 ssize_t _puts(char *str);
@@ -74,7 +74,7 @@ char *find_path(char **env);
 int execute_cwd(vars_t *vars);
 int check_for_dir(char *str);
 
-void print_error(vars_t *vars, char *msg);
+void print_error(vars_t *vars, char *messages);
 void _puts2(char *str);
 char *_uitoa(unsigned int count);
 
